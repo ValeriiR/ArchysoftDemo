@@ -11,9 +11,24 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{2A41A313-E
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{EFE67E4E-5A51-410B-A95A-A436B26DA86B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{C617B3DA-7EFC-405E-A75A-C89EB956B55F}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C617B3DA-7EFC-405E-A75A-C89EB956B55F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C617B3DA-7EFC-405E-A75A-C89EB956B55F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C617B3DA-7EFC-405E-A75A-C89EB956B55F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C617B3DA-7EFC-405E-A75A-C89EB956B55F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C617B3DA-7EFC-405E-A75A-C89EB956B55F} = {C7A77393-DDAA-472D-A2C8-52E7D91295E1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C775C969-31C5-4B46-BEAB-D24C1F678F9B}
