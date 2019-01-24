@@ -1,8 +1,6 @@
-﻿
-
-using System;
+﻿using System;
 using D1.Model.Extentions;
-using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Identity;
+
 
 namespace WebApi.Model
 {
@@ -18,6 +16,12 @@ namespace WebApi.Model
             Status = 1;
             Description = "Success";
             Timestamp = DateTime.UtcNow.CovertToTimestamp();
+        }
+
+        public ApiResponse(int status, string description)
+        {
+            this.Status = status;
+            this.Description = description;
         }
     }
 

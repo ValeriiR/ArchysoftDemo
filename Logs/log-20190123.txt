@@ -1,0 +1,289 @@
+2019-01-23 16:33:49.260 +02:00 [Information] User profile is available. Using '"C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-01-23 16:33:50.218 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44343/  
+2019-01-23 16:33:50.358 +02:00 [Information] Request finished in 145.5842ms 404 
+2019-01-23 16:34:26.709 +02:00 [Information] Request starting HTTP/1.1 POST https://localhost:44343/auth/login application/json 64
+2019-01-23 16:34:26.710 +02:00 [Information] Executing endpoint '"WebApi.Controllers.AuthController.Login (WebApi)"'
+2019-01-23 16:34:26.805 +02:00 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing action "WebApi.Controllers.AuthController.Login (WebApi)"
+2019-01-23 16:34:27.139 +02:00 [Information] Executing action method "WebApi.Controllers.AuthController.Login (WebApi)" with arguments (["D1.Model.LoginModel"]) - Validation state: Valid
+2019-01-23 16:34:27.174 +02:00 [Information] Executed action method "WebApi.Controllers.AuthController.Login (WebApi)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 29.1656ms.
+2019-01-23 16:34:27.180 +02:00 [Information] Executing ObjectResult, writing value of type '"WebApi.Model.ApiResponse`1[[D1.Model.TokenModel, D1.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2019-01-23 16:34:27.237 +02:00 [Information] Executed action "WebApi.Controllers.AuthController.Login (WebApi)" in 420.7546ms
+2019-01-23 16:34:27.238 +02:00 [Information] Executed endpoint '"WebApi.Controllers.AuthController.Login (WebApi)"'
+2019-01-23 16:34:27.239 +02:00 [Information] Request finished in 529.383ms 200 application/json; charset=utf-8
+2019-01-23 16:34:45.102 +02:00 [Information] Request starting HTTP/1.1 POST https://localhost:44343/auth/login application/json 64
+2019-01-23 16:34:45.102 +02:00 [Information] Executing endpoint '"WebApi.Controllers.AuthController.Login (WebApi)"'
+2019-01-23 16:34:45.103 +02:00 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing action "WebApi.Controllers.AuthController.Login (WebApi)"
+2019-01-23 16:34:45.104 +02:00 [Information] Executing action method "WebApi.Controllers.AuthController.Login (WebApi)" with arguments (["D1.Model.LoginModel"]) - Validation state: Valid
+2019-01-23 16:34:45.105 +02:00 [Information] Executed action method "WebApi.Controllers.AuthController.Login (WebApi)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 0.0632ms.
+2019-01-23 16:34:45.127 +02:00 [Information] Executing ObjectResult, writing value of type '"WebApi.Model.ApiResponse`1[[D1.Model.TokenModel, D1.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2019-01-23 16:34:45.129 +02:00 [Information] Executed action "WebApi.Controllers.AuthController.Login (WebApi)" in 24.9419ms
+2019-01-23 16:34:45.129 +02:00 [Information] Executed endpoint '"WebApi.Controllers.AuthController.Login (WebApi)"'
+2019-01-23 16:34:45.130 +02:00 [Information] Request finished in 27.5819ms 200 application/json; charset=utf-8
+2019-01-23 16:40:51.078 +02:00 [Information] User profile is available. Using '"C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-01-23 16:40:52.194 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44343/  
+2019-01-23 16:40:52.279 +02:00 [Information] Request finished in 86.0893ms 404 
+2019-01-23 16:41:02.477 +02:00 [Information] Request starting HTTP/1.1 POST https://localhost:44343/auth/login application/json 64
+2019-01-23 16:41:02.480 +02:00 [Information] Executing endpoint '"WebApi.Controllers.AuthController.Login (WebApi)"'
+2019-01-23 16:41:02.503 +02:00 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing action "WebApi.Controllers.AuthController.Login (WebApi)"
+2019-01-23 16:41:02.927 +02:00 [Information] Executing action method "WebApi.Controllers.AuthController.Login (WebApi)" with arguments (["D1.Model.LoginModel"]) - Validation state: Valid
+2019-01-23 16:41:14.943 +02:00 [Information] Executed action method "WebApi.Controllers.AuthController.Login (WebApi)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 12006.293ms.
+2019-01-23 16:41:14.953 +02:00 [Information] Executing ObjectResult, writing value of type '"WebApi.Model.ApiResponse`1[[D1.Model.TokenModel, D1.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2019-01-23 16:41:20.659 +02:00 [Information] Executed action "WebApi.Controllers.AuthController.Login (WebApi)" in 18147.1032ms
+2019-01-23 16:41:20.661 +02:00 [Information] Executed endpoint '"WebApi.Controllers.AuthController.Login (WebApi)"'
+2019-01-23 16:41:20.665 +02:00 [Information] Request finished in 18187.5276ms 200 application/json; charset=utf-8
+2019-01-23 17:11:52.703 +02:00 [Information] User profile is available. Using '"C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-01-23 17:11:52.952 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44343/  
+2019-01-23 17:11:52.988 +02:00 [Information] Request finished in 37.9729ms 404 
+2019-01-23 17:11:57.994 +02:00 [Information] Request starting HTTP/1.1 POST https://localhost:44343/auth/login application/json 64
+2019-01-23 17:11:57.996 +02:00 [Information] Executing endpoint '"WebApi.Controllers.AuthController.Login (WebApi)"'
+2019-01-23 17:11:58.021 +02:00 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing action "WebApi.Controllers.AuthController.Login (WebApi)"
+2019-01-23 17:11:58.125 +02:00 [Information] Executing action method "WebApi.Controllers.AuthController.Login (WebApi)" with arguments (["D1.Model.LoginModel"]) - Validation state: Valid
+2019-01-23 17:11:58.188 +02:00 [Information] Executed action "WebApi.Controllers.AuthController.Login (WebApi)" in 162.4697ms
+2019-01-23 17:11:58.189 +02:00 [Information] Executed endpoint '"WebApi.Controllers.AuthController.Login (WebApi)"'
+2019-01-23 17:11:58.189 +02:00 [Error] An unhandled exception has occurred while executing the request.
+System.NotImplementedException: The method or operation is not implemented.
+   at D1.Data.Repositories.Concrete.UserRepository.GetUser(String login, String password) in C:\Users\Admin\Desktop\ARCHYSOFT\Studying\Projects\Solution1\D1.Data\Repositories\Concrete\UserRepository.cs:line 16
+   at D1.Model.Services.Concrete.AuthService.Login(LoginModel loginModel) in C:\Users\Admin\Desktop\ARCHYSOFT\Studying\Projects\Solution1\D1.Model\Services\Concrete\AuthService.cs:line 20
+   at WebApi.Controllers.AuthController.Login(LoginModel loginModel) in C:\Users\Admin\Desktop\ARCHYSOFT\Studying\Projects\Solution1\WebApi\Controllers\AuthController.cs:line 23
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-01-23 17:11:58.598 +02:00 [Information] Request finished in 603.7038ms 500 text/html; charset=utf-8
+2019-01-23 17:55:15.876 +02:00 [Information] User profile is available. Using '"C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-01-23 17:55:16.747 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44343/  
+2019-01-23 17:55:16.810 +02:00 [Information] Request finished in 64.5804ms 404 
+2019-01-23 19:25:08.614 +02:00 [Information] User profile is available. Using '"C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-01-23 19:25:09.609 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44343/  
+2019-01-23 19:25:09.678 +02:00 [Information] Request finished in 70.9766ms 404 
+2019-01-23 19:25:33.038 +02:00 [Information] User profile is available. Using '"C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-01-23 19:25:33.828 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44343/  
+2019-01-23 19:25:33.890 +02:00 [Information] Request finished in 62.8575ms 404 
+2019-01-23 19:25:56.651 +02:00 [Information] User profile is available. Using '"C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-01-23 19:25:57.464 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44343/  
+2019-01-23 19:25:57.534 +02:00 [Information] Request finished in 71.1678ms 404 
+2019-01-23 19:28:05.890 +02:00 [Information] User profile is available. Using '"C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-01-23 19:28:19.838 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44343/  
+2019-01-23 19:28:19.906 +02:00 [Information] Request finished in 69.3577ms 404 
+2019-01-23 19:28:26.752 +02:00 [Information] Request starting HTTP/1.1 POST https://localhost:44343/auth/login application/json 64
+2019-01-23 19:28:26.757 +02:00 [Information] Executing endpoint '"WebApi.Controllers.AuthController.Login (WebApi)"'
+2019-01-23 19:28:26.779 +02:00 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing action "WebApi.Controllers.AuthController.Login (WebApi)"
+2019-01-23 19:28:27.007 +02:00 [Information] Executing action method "WebApi.Controllers.AuthController.Login (WebApi)" with arguments (["D1.Model.LoginModel"]) - Validation state: Valid
+2019-01-23 19:28:50.596 +02:00 [Information] Executed action method "WebApi.Controllers.AuthController.Login (WebApi)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 23575.8563ms.
+2019-01-23 19:28:50.614 +02:00 [Information] Executing ObjectResult, writing value of type '"WebApi.Model.ApiResponse`1[[D1.Model.TokenModel, D1.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2019-01-23 19:28:50.660 +02:00 [Information] Executed action "WebApi.Controllers.AuthController.Login (WebApi)" in 23876.3093ms
+2019-01-23 19:28:50.662 +02:00 [Information] Executed endpoint '"WebApi.Controllers.AuthController.Login (WebApi)"'
+2019-01-23 19:28:50.666 +02:00 [Information] Request finished in 23914.2036ms 200 application/json; charset=utf-8
+2019-01-23 19:35:40.003 +02:00 [Information] User profile is available. Using '"C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-01-23 19:35:40.236 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44343/  
+2019-01-23 19:35:40.274 +02:00 [Information] Request finished in 38.7355ms 404 
+2019-01-23 19:35:44.079 +02:00 [Information] Request starting HTTP/1.1 POST https://localhost:44343/auth/login application/json 64
+2019-01-23 19:35:44.080 +02:00 [Information] Executing endpoint '"WebApi.Controllers.AuthController.Login (WebApi)"'
+2019-01-23 19:35:44.098 +02:00 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing action "WebApi.Controllers.AuthController.Login (WebApi)"
+2019-01-23 19:35:44.105 +02:00 [Information] Executed action "WebApi.Controllers.AuthController.Login (WebApi)" in 4.2142ms
+2019-01-23 19:35:44.108 +02:00 [Information] Executed endpoint '"WebApi.Controllers.AuthController.Login (WebApi)"'
+2019-01-23 19:35:44.109 +02:00 [Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'WebApi.Controllers.AuthController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-01-23 19:35:44.195 +02:00 [Information] Request finished in 116.7326ms 500 text/html; charset=utf-8
+2019-01-23 19:35:51.969 +02:00 [Information] Request starting HTTP/1.1 POST https://localhost:44343/auth/login application/json 64
+2019-01-23 19:35:51.969 +02:00 [Information] Executing endpoint '"WebApi.Controllers.AuthController.Login (WebApi)"'
+2019-01-23 19:35:51.970 +02:00 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing action "WebApi.Controllers.AuthController.Login (WebApi)"
+2019-01-23 19:35:51.970 +02:00 [Information] Executed action "WebApi.Controllers.AuthController.Login (WebApi)" in 0.5109ms
+2019-01-23 19:35:51.971 +02:00 [Information] Executed endpoint '"WebApi.Controllers.AuthController.Login (WebApi)"'
+2019-01-23 19:35:51.971 +02:00 [Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'WebApi.Controllers.AuthController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-01-23 19:35:51.981 +02:00 [Information] Request finished in 11.9586ms 500 text/html; charset=utf-8
+2019-01-23 19:42:11.869 +02:00 [Information] User profile is available. Using '"C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-01-23 19:42:12.757 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44343/  
+2019-01-23 19:42:12.828 +02:00 [Information] Request finished in 74.3814ms 404 
+2019-01-23 19:42:16.776 +02:00 [Information] Request starting HTTP/1.1 POST https://localhost:44343/auth/login application/json 64
+2019-01-23 19:42:16.780 +02:00 [Information] Executing endpoint '"WebApi.Controllers.AuthController.Login (WebApi)"'
+2019-01-23 19:42:16.806 +02:00 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing action "WebApi.Controllers.AuthController.Login (WebApi)"
+2019-01-23 19:42:16.817 +02:00 [Information] Executed action "WebApi.Controllers.AuthController.Login (WebApi)" in 5.291ms
+2019-01-23 19:42:16.822 +02:00 [Information] Executed endpoint '"WebApi.Controllers.AuthController.Login (WebApi)"'
+2019-01-23 19:42:16.826 +02:00 [Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'WebApi.Controllers.AuthController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-01-23 19:42:17.054 +02:00 [Information] Request finished in 277.6949ms 500 text/html; charset=utf-8
+2019-01-23 19:42:19.750 +02:00 [Information] Request starting HTTP/1.1 POST https://localhost:44343/auth/login application/json 64
+2019-01-23 19:42:19.753 +02:00 [Information] Executing endpoint '"WebApi.Controllers.AuthController.Login (WebApi)"'
+2019-01-23 19:42:19.759 +02:00 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing action "WebApi.Controllers.AuthController.Login (WebApi)"
+2019-01-23 19:42:19.763 +02:00 [Information] Executed action "WebApi.Controllers.AuthController.Login (WebApi)" in 1.9184ms
+2019-01-23 19:42:19.770 +02:00 [Information] Executed endpoint '"WebApi.Controllers.AuthController.Login (WebApi)"'
+2019-01-23 19:42:19.775 +02:00 [Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'WebApi.Controllers.AuthController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-01-23 19:42:19.789 +02:00 [Information] Request finished in 39.6548ms 500 text/html; charset=utf-8
+2019-01-23 19:42:48.960 +02:00 [Information] User profile is available. Using '"C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-01-23 19:42:49.834 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44343/  
+2019-01-23 19:42:49.900 +02:00 [Information] Request finished in 68.3941ms 404 
+2019-01-23 19:42:53.141 +02:00 [Information] Request starting HTTP/1.1 POST https://localhost:44343/auth/login application/json 64
+2019-01-23 19:42:53.146 +02:00 [Information] Executing endpoint '"WebApi.Controllers.AuthController.Login (WebApi)"'
+2019-01-23 19:42:53.178 +02:00 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing action "WebApi.Controllers.AuthController.Login (WebApi)"
+2019-01-23 19:42:53.199 +02:00 [Information] Executed action "WebApi.Controllers.AuthController.Login (WebApi)" in 13.8221ms
+2019-01-23 19:42:53.205 +02:00 [Information] Executed endpoint '"WebApi.Controllers.AuthController.Login (WebApi)"'
+2019-01-23 19:42:53.215 +02:00 [Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'WebApi.Controllers.AuthController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-01-23 19:42:53.366 +02:00 [Information] Request finished in 225.2157ms 500 text/html; charset=utf-8
+2019-01-23 19:42:57.837 +02:00 [Information] Request starting HTTP/1.1 POST https://localhost:44343/auth/login application/json 64
+2019-01-23 19:42:57.840 +02:00 [Information] Executing endpoint '"WebApi.Controllers.AuthController.Login (WebApi)"'
+2019-01-23 19:42:57.844 +02:00 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing action "WebApi.Controllers.AuthController.Login (WebApi)"
+2019-01-23 19:42:57.870 +02:00 [Information] Executed action "WebApi.Controllers.AuthController.Login (WebApi)" in 2.0674ms
+2019-01-23 19:42:57.875 +02:00 [Information] Executed endpoint '"WebApi.Controllers.AuthController.Login (WebApi)"'
+2019-01-23 19:42:57.879 +02:00 [Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'WebApi.Controllers.AuthController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-01-23 19:42:57.899 +02:00 [Information] Request finished in 62.1482ms 500 text/html; charset=utf-8
+2019-01-23 19:43:29.306 +02:00 [Information] User profile is available. Using '"C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-01-23 19:43:30.482 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44343/  
+2019-01-23 19:43:30.603 +02:00 [Information] Request finished in 123.1169ms 404 
+2019-01-23 19:43:34.304 +02:00 [Information] Request starting HTTP/1.1 POST https://localhost:44343/auth/login application/json 64
+2019-01-23 19:43:34.309 +02:00 [Information] Executing endpoint '"WebApi.Controllers.AuthController.Login (WebApi)"'
+2019-01-23 19:43:34.336 +02:00 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing action "WebApi.Controllers.AuthController.Login (WebApi)"
+2019-01-23 19:43:34.347 +02:00 [Information] Executed action "WebApi.Controllers.AuthController.Login (WebApi)" in 6.3424ms
+2019-01-23 19:43:34.352 +02:00 [Information] Executed endpoint '"WebApi.Controllers.AuthController.Login (WebApi)"'
+2019-01-23 19:43:34.355 +02:00 [Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'WebApi.Controllers.AuthController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-01-23 19:43:34.491 +02:00 [Information] Request finished in 187.0391ms 500 text/html; charset=utf-8
+2019-01-23 19:43:36.913 +02:00 [Information] Request starting HTTP/1.1 POST https://localhost:44343/auth/login application/json 64
+2019-01-23 19:43:36.916 +02:00 [Information] Executing endpoint '"WebApi.Controllers.AuthController.Login (WebApi)"'
+2019-01-23 19:43:36.919 +02:00 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing action "WebApi.Controllers.AuthController.Login (WebApi)"
+2019-01-23 19:43:36.924 +02:00 [Information] Executed action "WebApi.Controllers.AuthController.Login (WebApi)" in 1.9789ms
+2019-01-23 19:43:36.928 +02:00 [Information] Executed endpoint '"WebApi.Controllers.AuthController.Login (WebApi)"'
+2019-01-23 19:43:36.932 +02:00 [Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'WebApi.Controllers.AuthController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-01-23 19:43:36.950 +02:00 [Information] Request finished in 36.4739ms 500 text/html; charset=utf-8
+2019-01-23 19:52:16.131 +02:00 [Information] User profile is available. Using '"C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-01-23 19:52:16.353 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44343/  
+2019-01-23 19:52:16.388 +02:00 [Information] Request finished in 36.6667ms 404 
+2019-01-23 19:52:19.743 +02:00 [Information] Request starting HTTP/1.1 POST https://localhost:44343/auth/login application/json 64
+2019-01-23 19:52:19.744 +02:00 [Information] Executing endpoint '"WebApi.Controllers.AuthController.Login (WebApi)"'
+2019-01-23 19:52:19.764 +02:00 [Information] Route matched with "{action = \"Login\", controller = \"Auth\"}". Executing action "WebApi.Controllers.AuthController.Login (WebApi)"
+2019-01-23 19:52:19.845 +02:00 [Information] Executing action method "WebApi.Controllers.AuthController.Login (WebApi)" with arguments (["D1.Model.LoginModel"]) - Validation state: Valid
+2019-01-23 19:52:19.852 +02:00 [Information] Helloooooooooooooooooooooooooooooooooo
+2019-01-23 19:52:19.858 +02:00 [Information] Executed action method "WebApi.Controllers.AuthController.Login (WebApi)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 7.5602ms.
+2019-01-23 19:52:19.864 +02:00 [Information] Executing ObjectResult, writing value of type '"WebApi.Model.ApiResponse`1[[D1.Model.TokenModel, D1.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2019-01-23 19:52:19.881 +02:00 [Information] Executed action "WebApi.Controllers.AuthController.Login (WebApi)" in 115.099ms
+2019-01-23 19:52:19.882 +02:00 [Information] Executed endpoint '"WebApi.Controllers.AuthController.Login (WebApi)"'
+2019-01-23 19:52:19.883 +02:00 [Information] Request finished in 140.5028ms 200 application/json; charset=utf-8

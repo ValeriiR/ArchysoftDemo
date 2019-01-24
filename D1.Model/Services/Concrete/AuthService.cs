@@ -21,11 +21,13 @@ namespace D1.Model.Services.Concrete
 
             if (user == null)
             {
-                throw new BusinessException("Invalid login or password");
+                throw new BusinessException("Invalid login or password", -2);
             }
             else
             {
-                return GenerateToken(user);
+                 return GenerateToken(user);
+               // throw new BusinessException("This is my exception!!!!", -2);
+
             }
 
         }

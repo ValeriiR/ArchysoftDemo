@@ -4,11 +4,15 @@ using System;
 
 namespace D1.Model.Exceptions
 {
-    class BusinessException:Exception
+    public class BusinessException : Exception
     {
-        public BusinessException(string message):base(message)
-        {
 
+        public int Status { get; set; }
+        public string Description { get; set; }
+        public BusinessException(string message, int status) : base(message)
+        {
+            this.Description = message;
+            this.Status = status;
         }
     }
 }
