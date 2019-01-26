@@ -28,6 +28,7 @@ namespace WebApi.Controllers
             
             TokenModel token = this._authService.Login(loginModel);
             return new ApiResponse<TokenModel>(token);
+            
         }
     }
 }

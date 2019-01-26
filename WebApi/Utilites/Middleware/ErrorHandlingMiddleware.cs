@@ -9,6 +9,7 @@ using Serilog.Debugging;
 using D1.Model.Exceptions;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
+using Serilog;
 using WebApi.Model;
 
 namespace WebApi.Utilites.Middleware
@@ -79,7 +80,7 @@ namespace WebApi.Utilites.Middleware
         {
             if (exceptionType != typeof(BusinessException) && exceptionType != typeof(UnauthorizedAccessException))
             {
-                _logger.LogError(exception, exception.Message);
+                _logger.LogError(exception, exception.Message);               
             }
         }
 

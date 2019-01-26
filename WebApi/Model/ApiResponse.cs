@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Linq;
 using D1.Model.Extentions;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 
 namespace WebApi.Model
@@ -22,6 +24,25 @@ namespace WebApi.Model
         {
             this.Status = status;
             this.Description = description;
+        }
+
+        public ApiResponse(ModelStateDictionary state)
+        {
+            if (state == null) return;
+
+            Status = 1;
+            Timestamp = DateTime.Now.CovertToTimestamp();
+
+            var validationKeys = state.Keys.Where(x => !string.IsNullOrWhiteSpace(x)).ToList();
+
+            foreach (var validationKey in validationKeys)
+            {
+                var property = state[validationKey];
+                if (property.ValidationState == ModelValidationState.Invalid)
+                {
+                    Description = property.Errors.FirstOrDefault()?.ErrorMessage;
+                }
+            }
         }
     }
 

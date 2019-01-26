@@ -10,8 +10,7 @@ namespace D1.Data.Repositories.Concrete
     {
         public User GetUser(string login, string password)
         {
-            return new User();
-            //throw new Exception("rrrrrr");
+            return new User();        
         }
         
     }

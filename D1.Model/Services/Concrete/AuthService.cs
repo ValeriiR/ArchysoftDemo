@@ -25,9 +25,7 @@ namespace D1.Model.Services.Concrete
             }
             else
             {
-                 return GenerateToken(user);
-               // throw new BusinessException("This is my exception!!!!", -2);
-
+                 return GenerateToken(user);             
             }
 
         }
