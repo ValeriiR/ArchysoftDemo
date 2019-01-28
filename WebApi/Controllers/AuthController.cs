@@ -2,14 +2,12 @@
 using D1.Model.Services.Abstract;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using Serilog;
 using WebApi.Model;
-using ILogger = Microsoft.Extensions.Logging.ILogger;
+
 
 namespace WebApi.Controllers
 {
-    public class AuthController
+    public class AuthController:Controller
     {
         private readonly IAuthService _authService;
     

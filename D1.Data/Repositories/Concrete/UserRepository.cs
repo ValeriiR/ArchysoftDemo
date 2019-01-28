@@ -1,17 +1,36 @@
-﻿
-using System;
-using D1.Data.Entities;
+﻿using D1.Data.Entities;
 using D1.Data.Repositories.Abstract;
-
+using Microsoft.AspNetCore.Identity;
 
 namespace D1.Data.Repositories.Concrete
 {
-    public class UserRepository : IUserRepository
+    public class UserRepository : Repository<User>, IUserRepository
     {
-        public User GetUser(string login, string password)
+       
+        private readonly UserManager<User> _userManager;
+        private readonly IPasswordHasher<User> _passwordHasher;
+
+        public UserRepository(DataContext dataContext, UserManager<User> userManager, IPasswordHasher<User> passwordHasher) : base(dataContext)
         {
-            return new User();        
+          
+            _userManager = userManager;
+            _passwordHasher = passwordHasher;
         }
-        
+
+        public User GetUser(string email, string password)
+        {
+            var user = _userManager.FindByEmailAsync(email).Result;
+            if (user != null)
+            {
+                if (_passwordHasher.VerifyHashedPassword(user, user.PasswordHash, password) ==
+                    PasswordVerificationResult.Success)
+                {
+                    return user;
+                }
+            }
+
+            return null;
+        }
+
     }
 }

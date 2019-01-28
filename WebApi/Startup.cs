@@ -1,4 +1,7 @@
 ﻿using System;
+using System.IdentityModel.Tokens.Jwt;
+using System.Text;
+using AutoMapper;
 using D1.Data.Repositories.Abstract;
 using D1.Model.Services.Abstract;
 using D1.Model.Services.Concrete;
@@ -16,18 +19,33 @@ using WebApi.Utilites.Filters;
 using WebApi.Utilites.Middleware;
 using D1.Data;
 using D1.Data.Entities;
+using D1.Model.Mappings;
+using D1.Model.Settings;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc.Authorization;
+using Microsoft.IdentityModel.Tokens;
+
 
 namespace WebApi
 {
     public class Startup
     {
+
+        public IConfiguration Configuration { get; }
+
+        private readonly ISettingsService _settingsService;
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            var jwtSettings = new JwtSettings();
+            Configuration.Bind(nameof(JwtSettings), jwtSettings);
+            _settingsService = new SettingsService(jwtSettings);
         }
 
-        public IConfiguration Configuration { get; }
+
 
 
         public void ConfigureServices(IServiceCollection services)
@@ -47,6 +65,30 @@ namespace WebApi
             .AddEntityFrameworkStores<DataContext>()
             .AddDefaultTokenProviders();
 
+            JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
+            services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(options =>
+            {
+                options.SaveToken = true;
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = false,
+                    ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true,
+                    ValidIssuer = _settingsService.JwtSettings.Issuer,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_settingsService.JwtSettings.Key)),
+                    ClockSkew = TimeSpan.Zero,
+                };
+            });
+
+            services.AddCors();
+            services.AddResponseCaching();
+
             Log.Logger = new LoggerConfiguration()
                 .ReadFrom
                 .Configuration(Configuration)
@@ -54,6 +96,12 @@ namespace WebApi
             AppDomain.CurrentDomain.ProcessExit += (s, e) => Log.CloseAndFlush();
             services.AddSingleton(Log.Logger);
 
+
+            services.AddSingleton<IMapper>(new Mapper(new MapperConfiguration(options =>
+            {
+                options.CreateMissingTypeMaps = false;
+                options.AddProfile<UserMapping>();
+            })));
             //LoggerConfiguration v=new LoggerConfiguration();
             //   LoggerSettingsConfiguration vv = v.ReadFrom;
             //   LoggerConfiguration vvv = vv.Configuration(Configuration);
@@ -62,14 +110,24 @@ namespace WebApi
 
             services.AddMvc(options =>
             {
+                var policy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
+                options.Filters.Add(new AuthorizeFilter(policy));
+
                 options.Filters.Add(new ValidationModelStateFilter());
 
             }).AddFluentValidation(configuration => configuration.RegisterValidatorsFromAssemblyContaining<LoginModel>());
 
+            //services
             services.AddTransient<IAuthService, AuthService>();
+            services.AddTransient(typeof(IUserService), typeof(UserService));
+           // services.AddTransient<ISettingsService, SettingsService>();
 
-            services.AddTransient<IDatabaseInitializer, DatabaseInitializer>();
+            //repositories          
             services.AddTransient<IUserRepository, UserRepository>();
+            services.AddTransient<IDatabaseInitializer, DatabaseInitializer>();
+
+            // Settings
+            services.AddSingleton(_settingsService);
         }
 
 
@@ -85,9 +143,15 @@ namespace WebApi
                 app.UseHsts();
             }
 
-            app.UseMiddleware(typeof(ErrorHandlingMiddleware));
+            app.UseCors(options =>
+                options.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod().WithExposedHeaders("X-File-Name"));
 
-            app.UseHttpsRedirection();
+            app.UseAuthentication();
+
+            app.UseMiddleware(typeof(ErrorHandlingMiddleware));
+            // app.UseMiddleware<ErrorHandlingMiddleware>();
+
+            // app.UseHttpsRedirection();
             app.UseMvc();
         }
     }

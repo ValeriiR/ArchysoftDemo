@@ -48,13 +48,14 @@ namespace WebApi.Model
 
     public class ApiResponse<T>:ApiResponse where T : class
     {
-        private readonly T _model;
+      //  private readonly T _model;
 
         public T Model { get; set; }
 
         public ApiResponse(T model)
         {
-            this._model = model;
+           // this._model = model;
+           Model = model;
         }
 
     }
