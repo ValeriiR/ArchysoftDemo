@@ -12,9 +12,8 @@ namespace D1.Model.Services.Concrete
         {
 
             var message = new MimeMessage();
-         //   message.From.Add(new MailboxAddress("Admin", "admin@archysoft.com"));
+            
             message.From.Add(new MailboxAddress("Admin", "ArchysoftTest@yandex.ru"));
-
             message.To.Add(new MailboxAddress("", "stepnaturesto@gmail.com"));
             message.Subject = subject;
 
@@ -33,7 +32,6 @@ namespace D1.Model.Services.Concrete
 
             //    await client.DisconnectAsync(true);
             //}
-
 
 
             using (var client = new SmtpClient())

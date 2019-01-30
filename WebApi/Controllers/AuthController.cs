@@ -1,5 +1,4 @@
-﻿using System;
-using D1.Model;
+﻿using D1.Model;
 using D1.Model.Authentification;
 using D1.Model.Services.Abstract;
 using Microsoft.AspNetCore.Authorization;
@@ -42,21 +41,13 @@ namespace WebApi.Controllers
         }
 
 
-        [HttpGet]
-        [AllowAnonymous]
-        [Route(Routes.RecoverPassword)]
-        public ApiResponse<TokenModel> RecoverPassword(Guid id,string token)
-        {
-            //  int result = _authService.RecoverPassword(recoverPasswordModel);
-            TokenModel realToken=_authService.ConfirmUserForRecoveringPassword(id, token);
-            return new ApiResponse<TokenModel>(realToken);
-        }
-
+        
         [HttpPost]
+        [AllowAnonymous]
         [Route(Routes.RecoverPassword)]
         public ApiResponse RecoverPassword([FromBody] RecoverPasswordModel recoverPasswordModel)
         {
-          //  int result = _authService.RecoverPassword(recoverPasswordModel);
+            _authService.RecoverPassword(recoverPasswordModel);
             return new ApiResponse();
         }
     }

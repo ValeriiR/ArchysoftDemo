@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace D1.Model
+
+namespace D1.Model.Authentification
 {
     public class TokenModel
     {

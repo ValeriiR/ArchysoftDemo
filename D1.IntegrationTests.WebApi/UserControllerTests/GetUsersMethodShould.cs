@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using D1.IntegrationTests.WebApi.Seeds;
 using D1.Model;
+using D1.Model.Authentification;
 using D1.Model.Users;
 using Newtonsoft.Json;
 using WebApi.Model;

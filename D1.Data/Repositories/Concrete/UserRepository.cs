@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Reflection.Metadata.Ecma335;
 using D1.Data.Entities;
 using D1.Data.Repositories.Abstract;
 using Microsoft.AspNetCore.Identity;
@@ -65,15 +64,11 @@ namespace D1.Data.Repositories.Concrete
            return _userManager.GeneratePasswordResetTokenAsync(user).Result;
         }
 
-        public bool VerifyUserToken(User user,string token)
+       
+        public void UpdatePassword(User user, string password,string token)
         {
-          
-            return _userManager.VerifyUserTokenAsync(user, "password reset token provider", "reset password",token).Result;
-        }
+            IdentityResult identityResult = _userManager.ResetPasswordAsync(user, token, password).Result; 
 
-        public void UpdatePassword(User user, string password)
-        {
-            user.PasswordHash = _userManager.PasswordHasher.HashPassword(user, password);
             SaveChanges();
         }
     }

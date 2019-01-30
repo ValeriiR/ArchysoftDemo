@@ -1,7 +1,4 @@
-﻿
-
-using System;
-using D1.Model.Authentification;
+﻿using D1.Model.Authentification;
 
 namespace D1.Model.Services.Abstract
 {
@@ -12,7 +9,6 @@ namespace D1.Model.Services.Abstract
         void ForgotPassword(ForgotPasswordModel email);
 
         void RecoverPassword(RecoverPasswordModel model);
-
-        TokenModel ConfirmUserForRecoveringPassword(Guid id, string token);
+    
     }
 }

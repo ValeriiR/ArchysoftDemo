@@ -1,7 +1,5 @@
-﻿
+﻿using FluentValidation;
 
-using FluentValidation;
-using FluentValidation.Validators;
 
 namespace D1.Model
 {

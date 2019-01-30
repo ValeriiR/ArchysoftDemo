@@ -22,8 +22,8 @@ namespace WebApi.Model
 
         public ApiResponse(int status, string description)
         {
-            this.Status = status;
-            this.Description = description;
+            Status = status;
+            Description = description;
         }
 
         public ApiResponse(ModelStateDictionary state)
@@ -48,8 +48,6 @@ namespace WebApi.Model
 
     public class ApiResponse<T>:ApiResponse where T : class
     {
-      //  private readonly T _model;
-
         public T Model { get; set; }
 
         public ApiResponse()
@@ -57,8 +55,7 @@ namespace WebApi.Model
 
         }
         public ApiResponse(T model)
-        {
-           // this._model = model;
+        {         
            Model = model;
         }
 

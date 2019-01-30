@@ -11,10 +11,10 @@ namespace D1.Data.Repositories.Abstract
         User GetUser(string login);
         User GetUserById(Guid id);
 
-        void UpdatePassword(User user, string password);
+        void UpdatePassword(User user, string password,string token);
 
         string GeneratePasswordResetToken(User user);
 
-        bool VerifyUserToken(User user, string token);
+      
     }
 }

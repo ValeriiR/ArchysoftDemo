@@ -1,5 +1,6 @@
 ﻿using System;
 using D1.Model;
+using D1.Model.Authentification;
 using Moq;
 using WebApi.Model;
 using Xunit;

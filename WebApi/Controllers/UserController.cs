@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
+using D1.Model.Common;
 using D1.Model.Services.Abstract;
 using D1.Model.Users;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using WebApi.Model;
 
@@ -19,10 +19,10 @@ namespace WebApi.Controllers
      
         [HttpGet]
         [Route(Routes.Users)]
-        public ApiResponse<List<UserGridModel>> GetUsers()
+        public ApiResponse<SearchResult<UserGridModel>> GetUsers(BaseFilter filter)
         {
-            List<UserGridModel> users = _userService.Get();
-            return new ApiResponse<List<UserGridModel>>(users);
+            SearchResult<UserGridModel> users = _userService.Get(filter);
+            return new ApiResponse<SearchResult<UserGridModel>>(users);
         }
     }
 }

@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using D1.Data.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -36,6 +34,17 @@ namespace D1.Data
                 {
                     throw new InvalidOperationException();
                 }
+
+                var profile = new UserProfile
+                {
+                    UserId = user.Id,
+                    FirstName = "John",
+                    LastName = "Doe",
+                    BirthDate = DateTime.Now.AddDays(-1)
+                };
+
+                _dataContext.UserProfiles.Add(profile);
+                _dataContext.SaveChanges();
             }
         }
     }

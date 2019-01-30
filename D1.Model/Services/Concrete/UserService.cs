@@ -1,10 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using AutoMapper;
+﻿using AutoMapper;
 using D1.Data.Repositories.Abstract;
+using D1.Model.Common;
 using D1.Model.Services.Abstract;
 using D1.Model.Users;
+using Microsoft.EntityFrameworkCore;
+using System.Linq;
+using D1.Model.Extentions;
 
 namespace D1.Model.Services.Concrete
 {
@@ -20,9 +21,14 @@ namespace D1.Model.Services.Concrete
         }
 
 
-        public List<UserGridModel> Get()
-        {          
-            return _userRepository.Get().Select(x => _mapper.Map<UserGridModel>(x)).ToList();
+        public SearchResult<UserGridModel> Get(BaseFilter filter)
+        {
+            //  return _userRepository.Get().Select(x => _mapper.Map<UserGridModel>(x)).ToList();
+            // var users= _userRepository.GetReadonly().Include()
+            var users = _userRepository.GetReadonly().Include(x => x.Profile).FilterUsers(filter).Select(x => _mapper.Map<UserGridModel>(x));
+            var searchResult = users.BaseFilter(filter);
+
+            return searchResult;
         }
     }
 }

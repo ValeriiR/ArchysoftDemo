@@ -1,13 +1,10 @@
-﻿
-
-using System;
-using FluentValidation;
+﻿using FluentValidation;
 
 namespace D1.Model.Authentification
 {
     public class RecoverPasswordModel
     {
-        public Guid UserId { get; set; }
+        public string UserId { get; set; }
         public string Token { get; set; }
         public string Password { get; set; }
         public string PasswordConfirm { get; set; }
