@@ -30,7 +30,7 @@ namespace WebApi.Model
         {
             if (state == null) return;
 
-            Status = 1;
+            Status = -1;
             Timestamp = DateTime.Now.CovertToTimestamp();
 
             var validationKeys = state.Keys.Where(x => !string.IsNullOrWhiteSpace(x)).ToList();
@@ -52,6 +52,10 @@ namespace WebApi.Model
 
         public T Model { get; set; }
 
+        public ApiResponse()
+        {
+
+        }
         public ApiResponse(T model)
         {
            // this._model = model;

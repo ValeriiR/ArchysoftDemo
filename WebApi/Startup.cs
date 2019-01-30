@@ -7,18 +7,17 @@ using D1.Model.Services.Abstract;
 using D1.Model.Services.Concrete;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using D1.Data.Repositories.Concrete;
 using D1.Model;
 using FluentValidation.AspNetCore;
 using Serilog;
-using Serilog.Configuration;
 using WebApi.Utilites.Filters;
 using WebApi.Utilites.Middleware;
 using D1.Data;
 using D1.Data.Entities;
+using D1.Model.Authentification;
 using D1.Model.Mappings;
 using D1.Model.Settings;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -115,11 +114,15 @@ namespace WebApi
 
                 options.Filters.Add(new ValidationModelStateFilter());
 
-            }).AddFluentValidation(configuration => configuration.RegisterValidatorsFromAssemblyContaining<LoginModel>());
+            }).AddFluentValidation(configuration => configuration.RegisterValidatorsFromAssemblyContaining<LoginModel>()
+                    .RegisterValidatorsFromAssemblyContaining<ForgotPasswordModel>()
+                    .RegisterValidatorsFromAssemblyContaining<RecoverPasswordModel>()
+            );
 
             //services
             services.AddTransient<IAuthService, AuthService>();
             services.AddTransient(typeof(IUserService), typeof(UserService));
+            services.AddTransient(typeof(IEmailService), typeof(EmailService));
            // services.AddTransient<ISettingsService, SettingsService>();
 
             //repositories          
