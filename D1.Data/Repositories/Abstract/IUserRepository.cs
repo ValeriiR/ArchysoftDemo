@@ -1,7 +1,7 @@
 ﻿
 using System;
 using D1.Data.Entities;
-using D1.Data.Repositories.Concrete;
+using Microsoft.AspNetCore.Identity;
 
 namespace D1.Data.Repositories.Abstract
 {
@@ -9,9 +9,9 @@ namespace D1.Data.Repositories.Abstract
     {
         User GetUser(string login, string password);
         User GetUser(string login);
-        User GetUserById(Guid id);
+       // User GetUserById(Guid id);
 
-        void UpdatePassword(User user, string password,string token);
+        IdentityResult ResetPassword(User user, string password,string token);
 
         string GeneratePasswordResetToken(User user);
 

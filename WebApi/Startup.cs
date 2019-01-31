@@ -41,7 +41,12 @@ namespace WebApi
             Configuration = configuration;
             var jwtSettings = new JwtSettings();
             Configuration.Bind(nameof(JwtSettings), jwtSettings);
-            _settingsService = new SettingsService(jwtSettings);
+
+            var emailSettings = new EmailSettings();
+            Configuration.Bind(nameof(EmailSettings), emailSettings);
+
+            _settingsService = new SettingsService(jwtSettings,emailSettings);
+                    
         }
 
 

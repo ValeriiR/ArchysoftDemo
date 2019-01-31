@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
+using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using D1.Data.Entities;
@@ -11,6 +12,7 @@ using D1.Model.Services.Abstract;
 using D1.Model.Exceptions;
 using Microsoft.IdentityModel.Tokens;
 using JwtRegisteredClaimNames = Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames;
+using Microsoft.AspNetCore.Identity;
 
 namespace D1.Model.Services.Concrete
 {
@@ -51,10 +53,10 @@ namespace D1.Model.Services.Concrete
             {
                 throw new BusinessException("Not find user with current email", -2);
             }
-      
-            var token =  _userRepository.GeneratePasswordResetToken(user);
 
-        
+            var token = _userRepository.GeneratePasswordResetToken(user);
+
+
             string url = $"https://localhost:44343/auth/recover-password/?id={user.Id}&token={token}";
 
             _emailService.SendEmailAsync(user.Email, "Recover Password", $"Для сброса пароля пройдите по ссылке: {url}");
@@ -63,16 +65,23 @@ namespace D1.Model.Services.Concrete
 
         public void RecoverPassword(RecoverPasswordModel model)
         {
-            User user = _userRepository.GetUserById(Guid.Parse(model.UserId));
+            var id= Guid.Parse(model.UserId);
+            User user = _userRepository.Get().Where(x => x.Id == id).FirstOrDefault();
+
+          //  User user = _userRepository.GetUserById(Guid.Parse(model.UserId));
             if (user == null)
             {
                 throw new BusinessException("User not found", -2);
             }
 
-            _userRepository.UpdatePassword(user, model.Password,model.Token);
+            IdentityResult result = _userRepository.ResetPassword(user, model.Password, model.Token);
+            if (!result.Succeeded)
+            {
+                throw new BusinessException("Resetting password failed", -1);
+            }
         }
 
-       
+
 
         private TokenModel GenerateToken(User user)
         {

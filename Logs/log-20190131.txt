@@ -1,0 +1,64 @@
+2019-01-31 15:05:18.714 +02:00 [Information] User profile is available. Using '"C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-01-31 15:05:23.229 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44343/  
+2019-01-31 15:05:23.723 +02:00 [Information] Request finished in 502.1523ms 404 
+2019-01-31 15:05:29.837 +02:00 [Information] Request starting HTTP/1.1 POST https://localhost:44343/auth/forgot-password application/json 31
+2019-01-31 15:05:29.894 +02:00 [Information] Route matched with "{action = \"ForgotPassword\", controller = \"Auth\"}". Executing action "WebApi.Controllers.AuthController.ForgotPassword (WebApi)"
+2019-01-31 15:05:30.397 +02:00 [Information] Executing action method "WebApi.Controllers.AuthController.ForgotPassword (WebApi)" with arguments (["D1.Model.Authentification.ForgotPasswordModel"]) - Validation state: Valid
+2019-01-31 15:05:31.223 +02:00 [Information] Executed action method "WebApi.Controllers.AuthController.ForgotPassword (WebApi)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 815.6379ms.
+2019-01-31 15:05:31.238 +02:00 [Information] Executing ObjectResult, writing value of type '"WebApi.Model.ApiResponse"'.
+2019-01-31 15:05:31.273 +02:00 [Information] Executed action "WebApi.Controllers.AuthController.ForgotPassword (WebApi)" in 1371.1974ms
+2019-01-31 15:05:31.278 +02:00 [Information] Request finished in 1441.2343ms 200 application/json; charset=utf-8
+2019-01-31 15:05:43.805 +02:00 [Information] Request starting HTTP/1.1 POST https://localhost:44343/auth/forgot-password application/json 31
+2019-01-31 15:05:43.809 +02:00 [Information] Route matched with "{action = \"ForgotPassword\", controller = \"Auth\"}". Executing action "WebApi.Controllers.AuthController.ForgotPassword (WebApi)"
+2019-01-31 15:05:43.855 +02:00 [Information] Executing action method "WebApi.Controllers.AuthController.ForgotPassword (WebApi)" with arguments (["D1.Model.Authentification.ForgotPasswordModel"]) - Validation state: Valid
+2019-01-31 15:05:43.922 +02:00 [Information] Executed action method "WebApi.Controllers.AuthController.ForgotPassword (WebApi)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 64.2165ms.
+2019-01-31 15:05:43.925 +02:00 [Information] Executing ObjectResult, writing value of type '"WebApi.Model.ApiResponse"'.
+2019-01-31 15:05:43.929 +02:00 [Information] Executed action "WebApi.Controllers.AuthController.ForgotPassword (WebApi)" in 116.9537ms
+2019-01-31 15:05:43.931 +02:00 [Information] Request finished in 126.2313ms 200 application/json; charset=utf-8
+2019-01-31 15:06:20.222 +02:00 [Information] User profile is available. Using '"C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-01-31 15:06:23.584 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44343/  
+2019-01-31 15:06:23.986 +02:00 [Information] Request finished in 405.9928ms 404 
+2019-01-31 15:19:13.504 +02:00 [Information] User profile is available. Using '"C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-01-31 15:19:17.176 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44343/  
+2019-01-31 15:19:17.565 +02:00 [Information] Request finished in 398.7763ms 404 
+2019-01-31 15:19:34.886 +02:00 [Information] Request starting HTTP/1.1 POST https://localhost:44343/auth/forgot-password application/json 31
+2019-01-31 15:19:34.930 +02:00 [Information] Route matched with "{action = \"ForgotPassword\", controller = \"Auth\"}". Executing action "WebApi.Controllers.AuthController.ForgotPassword (WebApi)"
+2019-01-31 15:19:35.395 +02:00 [Information] Executing action method "WebApi.Controllers.AuthController.ForgotPassword (WebApi)" with arguments (["D1.Model.Authentification.ForgotPasswordModel"]) - Validation state: Valid
+2019-01-31 15:20:03.017 +02:00 [Information] Executed action method "WebApi.Controllers.AuthController.ForgotPassword (WebApi)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 27604.6389ms.
+2019-01-31 15:20:03.034 +02:00 [Information] Executing ObjectResult, writing value of type '"WebApi.Model.ApiResponse"'.
+2019-01-31 15:20:03.058 +02:00 [Information] Executed action "WebApi.Controllers.AuthController.ForgotPassword (WebApi)" in 28121.9774ms
+2019-01-31 15:20:03.061 +02:00 [Information] Request finished in 28175.5851ms 200 application/json; charset=utf-8
+2019-01-31 15:53:23.567 +02:00 [Information] User profile is available. Using '"C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-01-31 15:53:27.094 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44343/  
+2019-01-31 15:53:27.419 +02:00 [Information] Request finished in 326.5976ms 404 
+2019-01-31 15:53:30.174 +02:00 [Information] Request starting HTTP/1.1 POST https://localhost:44343/auth/recover-password application/json 366
+2019-01-31 15:53:30.266 +02:00 [Information] Route matched with "{action = \"RecoverPassword\", controller = \"Auth\"}". Executing action "WebApi.Controllers.AuthController.RecoverPassword (WebApi)"
+2019-01-31 15:53:30.857 +02:00 [Information] Executing action method "WebApi.Controllers.AuthController.RecoverPassword (WebApi)" with arguments (["D1.Model.Authentification.RecoverPasswordModel"]) - Validation state: Valid
+2019-01-31 15:53:52.025 +02:00 [Warning] VerifyUserTokenAsync() failed with purpose: "ResetPassword" for user "05865f10-539b-4771-f4a0-08d686e3d535".
+2019-01-31 15:54:50.443 +02:00 [Information] User profile is available. Using '"C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-01-31 15:54:54.067 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44343/  
+2019-01-31 15:54:54.374 +02:00 [Information] Request finished in 309.3384ms 404 
+2019-01-31 15:54:58.235 +02:00 [Information] Request starting HTTP/1.1 POST https://localhost:44343/auth/forgot-password application/json 31
+2019-01-31 15:54:58.304 +02:00 [Information] Route matched with "{action = \"ForgotPassword\", controller = \"Auth\"}". Executing action "WebApi.Controllers.AuthController.ForgotPassword (WebApi)"
+2019-01-31 15:54:58.637 +02:00 [Information] Executing action method "WebApi.Controllers.AuthController.ForgotPassword (WebApi)" with arguments (["D1.Model.Authentification.ForgotPasswordModel"]) - Validation state: Valid
+2019-01-31 15:55:02.208 +02:00 [Information] Executed action method "WebApi.Controllers.AuthController.ForgotPassword (WebApi)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 3556.6291ms.
+2019-01-31 15:55:02.224 +02:00 [Information] Executing ObjectResult, writing value of type '"WebApi.Model.ApiResponse"'.
+2019-01-31 15:55:02.276 +02:00 [Information] Executed action "WebApi.Controllers.AuthController.ForgotPassword (WebApi)" in 3963.9107ms
+2019-01-31 15:55:02.281 +02:00 [Information] Request finished in 4046.3238ms 200 application/json; charset=utf-8
+2019-01-31 15:56:26.528 +02:00 [Information] User profile is available. Using '"C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-01-31 15:56:29.737 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44343/  
+2019-01-31 15:56:29.976 +02:00 [Information] Request finished in 241.4109ms 404 
+2019-01-31 15:56:49.746 +02:00 [Information] Request starting HTTP/1.1 POST https://localhost:44343/auth/forgot-password application/json 31
+2019-01-31 15:56:49.809 +02:00 [Information] Route matched with "{action = \"ForgotPassword\", controller = \"Auth\"}". Executing action "WebApi.Controllers.AuthController.ForgotPassword (WebApi)"
+2019-01-31 15:56:50.315 +02:00 [Information] Executing action method "WebApi.Controllers.AuthController.ForgotPassword (WebApi)" with arguments (["D1.Model.Authentification.ForgotPasswordModel"]) - Validation state: Valid
+2019-01-31 15:56:51.072 +02:00 [Information] Executed action method "WebApi.Controllers.AuthController.ForgotPassword (WebApi)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 744.741ms.
+2019-01-31 15:56:51.088 +02:00 [Information] Executing ObjectResult, writing value of type '"WebApi.Model.ApiResponse"'.
+2019-01-31 15:56:51.122 +02:00 [Information] Executed action "WebApi.Controllers.AuthController.ForgotPassword (WebApi)" in 1305.6429ms
+2019-01-31 15:56:51.126 +02:00 [Information] Request finished in 1380.8381ms 200 application/json; charset=utf-8
+2019-01-31 15:57:23.044 +02:00 [Information] Request starting HTTP/1.1 POST https://localhost:44343/auth/recover-password application/json 366
+2019-01-31 15:57:23.084 +02:00 [Information] Route matched with "{action = \"RecoverPassword\", controller = \"Auth\"}". Executing action "WebApi.Controllers.AuthController.RecoverPassword (WebApi)"
+2019-01-31 15:57:23.176 +02:00 [Information] Executing action method "WebApi.Controllers.AuthController.RecoverPassword (WebApi)" with arguments (["D1.Model.Authentification.RecoverPasswordModel"]) - Validation state: Valid
+2019-01-31 15:57:38.499 +02:00 [Information] Executed action method "WebApi.Controllers.AuthController.RecoverPassword (WebApi)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 15314.2145ms.
+2019-01-31 15:57:38.502 +02:00 [Information] Executing ObjectResult, writing value of type '"WebApi.Model.ApiResponse"'.
+2019-01-31 15:57:40.719 +02:00 [Information] Executed action "WebApi.Controllers.AuthController.RecoverPassword (WebApi)" in 17631.141ms
+2019-01-31 15:57:40.723 +02:00 [Information] Request finished in 17678.1891ms 200 application/json; charset=utf-8

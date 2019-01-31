@@ -7,13 +7,19 @@ namespace D1.Model.Services.Concrete
 {
     public class EmailService : IEmailService
     {
-        
+        private ISettingsService _settingsService;
+
+        public EmailService(ISettingsService settingsService)
+        {
+            _settingsService = settingsService;
+        }
+
         public async Task SendEmailAsync(string email, string subject, string messageText)
         {
 
             var message = new MimeMessage();
             
-            message.From.Add(new MailboxAddress("Admin", "ArchysoftTest@yandex.ru"));
+            message.From.Add(new MailboxAddress(_settingsService.EmailSettings.FromName, _settingsService.EmailSettings.FromEmail));
             message.To.Add(new MailboxAddress("", "stepnaturesto@gmail.com"));
             message.Subject = subject;
 
@@ -24,20 +30,11 @@ namespace D1.Model.Services.Concrete
             };
 
 
-            //using (var client = new SmtpClient())
-            //{
-            //    await client.ConnectAsync("smtp.gmail.com", 465, true);
-            //    await client.AuthenticateAsync("admin@archysoft.com", "pass");
-            //    await client.SendAsync(message);
-
-            //    await client.DisconnectAsync(true);
-            //}
-
-
+            
             using (var client = new SmtpClient())
             {
-                await client.ConnectAsync("smtp.yandex.ru", 465, true);
-                await client.AuthenticateAsync("ArchysoftTest@yandex.ru", "12345qwerty");
+                await client.ConnectAsync(_settingsService.EmailSettings.Host, _settingsService.EmailSettings.Port, _settingsService.EmailSettings.UseSsl);
+                await client.AuthenticateAsync(_settingsService.EmailSettings.UsernameEmail, _settingsService.EmailSettings.UsernamePassword);
                 await client.SendAsync(message);
 
                 await client.DisconnectAsync(true);

@@ -1,5 +1,4 @@
-﻿using System;
-using D1.Data.Entities;
+﻿using D1.Data.Entities;
 using D1.Data.Repositories.Abstract;
 using Microsoft.AspNetCore.Identity;
 
@@ -46,17 +45,17 @@ namespace D1.Data.Repositories.Concrete
             return null;     
         }
 
-        public User GetUserById(Guid id)
-        {
-            var user = _userManager.FindByIdAsync(id.ToString()).Result;
+        //public User GetUserById(Guid id)
+        //{
+        //    var user = _userManager.FindByIdAsync(id.ToString()).Result;
           
-            if (user != null)
-            {
-                return user;
-            }
+        //    if (user != null)
+        //    {
+        //        return user;
+        //    }
 
-            return null;
-        }
+        //    return null;
+        //}
 
 
         public string GeneratePasswordResetToken(User user)
@@ -65,11 +64,16 @@ namespace D1.Data.Repositories.Concrete
         }
 
        
-        public void UpdatePassword(User user, string password,string token)
+        public IdentityResult ResetPassword(User user, string password, string token)
         {
-            IdentityResult identityResult = _userManager.ResetPasswordAsync(user, token, password).Result; 
+            IdentityResult identityResult = _userManager.ResetPasswordAsync(user, token, password).Result;
+            if (identityResult.Succeeded)
+            {
+                SaveChanges();                
+            }
 
-            SaveChanges();
+            return identityResult;
+
         }
     }
 }
