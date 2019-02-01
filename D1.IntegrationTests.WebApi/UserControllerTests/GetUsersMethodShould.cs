@@ -63,9 +63,9 @@ namespace D1.IntegrationTests.WebApi.UserControllerTests
             List<UserGridModel> listUserGridModels = new List<UserGridModel>();
             listUserGridModels.Add(userGridModel);
            
-            var requestJsonForLogin = JsonConvert.SerializeObject(loginModel);
+            var requestJson = JsonConvert.SerializeObject(loginModel);
 
-            var responseFromLogin = await _sut.Client.PostAsync("/auth/login", new StringContent(requestJsonForLogin, Encoding.UTF8, "application/json"));
+            var responseFromLogin = await _sut.Client.PostAsync("/auth/login", new StringContent(requestJson, Encoding.UTF8, "application/json"));
             var resultJson = await responseFromLogin.Content.ReadAsStringAsync();
             var result = JsonConvert.DeserializeObject<ApiResponse<TokenModel>>(resultJson);
 

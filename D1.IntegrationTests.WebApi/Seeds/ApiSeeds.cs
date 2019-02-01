@@ -1,7 +1,5 @@
 ﻿using D1.Data;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using D1.Data.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;

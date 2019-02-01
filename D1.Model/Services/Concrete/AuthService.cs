@@ -51,7 +51,7 @@ namespace D1.Model.Services.Concrete
 
             if (user == null)
             {
-                throw new BusinessException("Not find user with current email", -2);
+                throw new BusinessException("Not found user with current email", -2);
             }
 
             var token = _userRepository.GeneratePasswordResetToken(user);

@@ -37,7 +37,7 @@ namespace D1.UnitTests.WebApi.AuthControllerTests
         }
 
         [Fact]
-        public void ReturndescriptionSuccessWhenLoginModelIsNull()
+        public void ReturnDescriptionSuccessWhenLoginModelIsNull()
         {
             //Arrange
             var expectedResult = new ApiResponse<TokenModel>
