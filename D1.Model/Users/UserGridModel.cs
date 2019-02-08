@@ -8,5 +8,6 @@ namespace D1.Model.Users
         public string Email { get; set; }
 
         public string UserName { get; set; }
+        //ii
     }
 }
