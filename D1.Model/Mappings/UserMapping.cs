@@ -9,7 +9,9 @@ namespace D1.Model.Mappings
     {
         public UserMapping()
         {
-            CreateMap<User, UserGridModel>();
+            CreateMap<User, UserGridModel>()
+                .ForMember(x => x.FirstName, opt => opt.MapFrom(u => u.Profile.FirstName))
+                .ForMember(x => x.LastName, opt => opt.MapFrom(u => u.Profile.LastName));
         }
     }
 }

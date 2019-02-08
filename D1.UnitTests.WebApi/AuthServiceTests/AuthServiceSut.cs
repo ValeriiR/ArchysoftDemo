@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿
 using D1.Data.Entities;
 using D1.Data.Repositories.Abstract;
-using D1.Data.Repositories.Concrete;
 using D1.Model.Services.Abstract;
 using D1.Model.Services.Concrete;
 using Moq;
-using WebApi.Controllers;
+
 
 namespace D1.UnitTests.WebApi.AuthServiceTests
 {
@@ -20,7 +17,7 @@ namespace D1.UnitTests.WebApi.AuthServiceTests
         public Mock<IEmailService> EmailService { get; set; }
 
 
-       
+
         public AuthServiceSut()
         {
             UserRepository = new Mock<IUserRepository>();
@@ -28,7 +25,7 @@ namespace D1.UnitTests.WebApi.AuthServiceTests
             SettingsService = new Mock<ISettingsService>();
             EmailService = new Mock<IEmailService>();
 
-            Instance = new AuthService(UserRepository.Object, SettingsService.Object,EmailService.Object);
+            Instance = new AuthService(UserRepository.Object, SettingsService.Object, EmailService.Object);
         }
     }
 }

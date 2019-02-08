@@ -23,11 +23,11 @@ namespace D1.Model.Services.Concrete
 
         public SearchResult<UserGridModel> Get(BaseFilter filter)
         {
-            //  return _userRepository.Get().Select(x => _mapper.Map<UserGridModel>(x)).ToList();
-            // var users= _userRepository.GetReadonly().Include()
-            var users = _userRepository.GetReadonly().Include(x => x.Profile).FilterUsers(filter).Select(x => _mapper.Map<UserGridModel>(x));
-            var searchResult = users.BaseFilter(filter);
+            
+            var users = _userRepository.GetReadonly().Include(x => x.Profile)
+                .FilterUsers(filter).Select(x => _mapper.Map<UserGridModel>(x));
 
+            var searchResult = users.BaseFilter(filter);
             return searchResult;
         }
     }

@@ -105,11 +105,7 @@ namespace WebApi
             {
                 options.CreateMissingTypeMaps = false;
                 options.AddProfile<UserMapping>();
-            })));
-            //LoggerConfiguration v=new LoggerConfiguration();
-            //   LoggerSettingsConfiguration vv = v.ReadFrom;
-            //   LoggerConfiguration vvv = vv.Configuration(Configuration);
-            //   Log.Logger  = vvv.CreateLogger();
+            })));         
 
 
             services.AddMvc(options =>
@@ -128,7 +124,7 @@ namespace WebApi
             services.AddTransient<IAuthService, AuthService>();
             services.AddTransient(typeof(IUserService), typeof(UserService));
             services.AddTransient(typeof(IEmailService), typeof(EmailService));
-           // services.AddTransient<ISettingsService, SettingsService>();
+          
 
             //repositories          
             services.AddTransient<IUserRepository, UserRepository>();
@@ -141,6 +137,14 @@ namespace WebApi
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, IDatabaseInitializer databaseInitializer)
         {
+            app.Use(async (ctx, next) =>
+            {
+                await next();
+                if (ctx.Response.StatusCode == 204)
+                {
+                    ctx.Response.ContentLength = 0;
+                }
+            });
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

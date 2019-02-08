@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using D1.Data.Configurations;
 using D1.Data.Entities;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
@@ -23,7 +21,7 @@ namespace D1.Data
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             var environment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
-            //var environment = Environment.GetEnvironmentVariable("ASPNETCORE_DEVELOPMENT");
+            
 
             var connection = environment == "Development" ? _configuration.GetConnectionString("DataContext") : Environment.GetEnvironmentVariable("D1_DATACONTEXT") ?? "";
             optionsBuilder.UseSqlServer(connection);
