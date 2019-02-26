@@ -45,7 +45,10 @@ namespace WebApi
             var emailSettings = new EmailSettings();
             Configuration.Bind(nameof(EmailSettings), emailSettings);
 
-            _settingsService = new SettingsService(jwtSettings,emailSettings);
+            var uiUrlsettings= new UIUrlSettings();
+            Configuration.Bind(nameof(UIUrlSettings), uiUrlsettings);
+
+            _settingsService = new SettingsService(jwtSettings,emailSettings,uiUrlsettings);
                     
         }
 
@@ -141,6 +144,15 @@ namespace WebApi
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, IDatabaseInitializer databaseInitializer)
         {
+            app.Use(async (ctx, next) =>
+            {
+                await next();
+                if (ctx.Response.StatusCode == 204)
+                {
+                    ctx.Response.ContentLength = 0;
+                }
+            });
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

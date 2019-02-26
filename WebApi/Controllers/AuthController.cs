@@ -37,7 +37,7 @@ namespace WebApi.Controllers
         public ApiResponse ForgotPassword([FromBody] ForgotPasswordModel email)
         {
            _authService.ForgotPassword(email);        
-            return new ApiResponse();
+            return new ApiResponse<TokenModel>(new TokenModel());
         }
 
 

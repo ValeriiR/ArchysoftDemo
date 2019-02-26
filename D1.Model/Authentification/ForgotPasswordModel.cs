@@ -13,7 +13,7 @@ namespace D1.Model.Authentification
     {
         public ForgotPasswordModelValidator()
         {
-            RuleFor(model => model.Email).NotEmpty().EmailAddress();        
+            RuleFor(model => model.Email).NotEmpty().EmailAddress();
         }
     }
 }

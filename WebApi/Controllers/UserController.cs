@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using D1.Model.Common;
+﻿using D1.Model.Common;
 using D1.Model.Services.Abstract;
 using D1.Model.Users;
 using Microsoft.AspNetCore.Mvc;

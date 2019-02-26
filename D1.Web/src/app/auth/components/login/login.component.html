@@ -1,0 +1,20 @@
+<form novalidate *ngIf="!loading">
+    <auth-notification></auth-notification>
+    
+  <mat-form-field style="width: 100%;">
+    <input matInput placeholder="{{'AUTH.LOGIN' | translate}}" [(ngModel)]="model.login" name="login" required>
+  </mat-form-field>
+
+  <mat-form-field style="width: 100%;">
+    <input matInput type="password" placeholder="{{'AUTH.PASSWORD' | translate}}" [(ngModel)]="model.password"
+      name="password" required>
+  </mat-form-field>
+
+  <button type="button" mat-button (click)="login()">{{'AUTH.LOGIN_BUTTON' | translate}}</button>
+</form>
+
+<div class="d-flex justify-content-center" *ngIf="loading">
+  <div class="spinner-border" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+</div>

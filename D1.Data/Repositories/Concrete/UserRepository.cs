@@ -44,18 +44,7 @@ namespace D1.Data.Repositories.Concrete
           
             return null;     
         }
-
-        //public User GetUserById(Guid id)
-        //{
-        //    var user = _userManager.FindByIdAsync(id.ToString()).Result;
-          
-        //    if (user != null)
-        //    {
-        //        return user;
-        //    }
-
-        //    return null;
-        //}
+    
 
 
         public string GeneratePasswordResetToken(User user)

@@ -56,8 +56,9 @@ namespace D1.Model.Services.Concrete
 
             var token = _userRepository.GeneratePasswordResetToken(user);
 
+            string uiUrl = _settingsService.UiUrlSettings.Url;
 
-            string url = $"https://localhost:44343/auth/recover-password/?id={user.Id}&token={token}";
+            string url = $"{uiUrl}/recover-password/?id={user.Id}&token={token}";
 
             _emailService.SendEmailAsync(user.Email, "Recover Password", $"Для сброса пароля пройдите по ссылке: {url}");
         }
@@ -66,9 +67,8 @@ namespace D1.Model.Services.Concrete
         public void RecoverPassword(RecoverPasswordModel model)
         {
             var id= Guid.Parse(model.UserId);
-            User user = _userRepository.Get().Where(x => x.Id == id).FirstOrDefault();
-
-          //  User user = _userRepository.GetUserById(Guid.Parse(model.UserId));
+            User user = _userRepository.Get().FirstOrDefault(x => x.Id == id);
+         
             if (user == null)
             {
                 throw new BusinessException("User not found", -2);
