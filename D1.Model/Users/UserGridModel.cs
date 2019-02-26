@@ -11,5 +11,6 @@ namespace D1.Model.Users
 
         public string FirstName { get; set; }
         public string LastName { get; set; }
+
     }
 }

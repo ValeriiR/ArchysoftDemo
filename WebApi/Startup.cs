@@ -45,7 +45,10 @@ namespace WebApi
             var emailSettings = new EmailSettings();
             Configuration.Bind(nameof(EmailSettings), emailSettings);
 
-            _settingsService = new SettingsService(jwtSettings,emailSettings);
+            var uiUrlsettings= new UIUrlSettings();
+            Configuration.Bind(nameof(UIUrlSettings), uiUrlsettings);
+
+            _settingsService = new SettingsService(jwtSettings,emailSettings,uiUrlsettings);
                     
         }
 
@@ -145,6 +148,7 @@ namespace WebApi
                     ctx.Response.ContentLength = 0;
                 }
             });
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

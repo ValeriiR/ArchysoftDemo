@@ -7,11 +7,13 @@ namespace D1.Model.Services.Concrete
     {
         public JwtSettings JwtSettings { get; set; }
         public  EmailSettings EmailSettings { get; set; }
+        public UIUrlSettings UiUrlSettings { get; set; }
 
-        public SettingsService(JwtSettings jwtSettings,EmailSettings emailSettings)
+        public SettingsService(JwtSettings jwtSettings,EmailSettings emailSettings, UIUrlSettings uiUrlSettings)
         {
             JwtSettings = jwtSettings;
             EmailSettings = emailSettings;
+            UiUrlSettings = uiUrlSettings;
         }
     }
 }

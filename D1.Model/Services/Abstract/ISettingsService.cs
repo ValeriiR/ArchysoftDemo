@@ -6,5 +6,7 @@ namespace D1.Model.Services.Abstract
     {
         JwtSettings JwtSettings { get; set; }
         EmailSettings EmailSettings { get; set; }
+        UIUrlSettings UiUrlSettings { get; set; }
+
     }
 }
