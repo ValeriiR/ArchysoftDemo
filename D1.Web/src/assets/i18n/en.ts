@@ -15,7 +15,8 @@ export const locale = {
             EMAIL: 'Email',
             ENTER_EMAIL_NOTIFICATION: 'Please enter your e-mail address. You will receive an email with a link to create a new password.',
             EMAIL_IS_SENT_NOTIFICATION: 'A letter was sent to your e-mail with a link to create a new password.',
-            INVALID_EMAIL: "Invalid e-mail"
+            INVALID_EMAIL: 'Invalid e-mail adress',
+            EMAIL_IS_REQUIRED: 'Email is required'
         }
     }
 };

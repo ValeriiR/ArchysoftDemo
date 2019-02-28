@@ -15,13 +15,14 @@ import { TokenService } from './services/token.service';
 import { AuthComponent } from './auth.component';
 import { LoginComponent } from './components/login/login.component';
 import { AuthNotificationComponent } from './components/auth-notification/auth-notification.component';
+import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
 
 export function factory(authService: AuthService) {
   return authService;
 }
 
 @NgModule({
-  declarations: [AuthComponent, LoginComponent, AuthNotificationComponent],
+  declarations: [AuthComponent, LoginComponent, AuthNotificationComponent, ForgotPasswordComponent],
   imports: [
     CommonModule,
     AuthRoutingModule,

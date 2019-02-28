@@ -15,8 +15,8 @@ export const locale = {
             EMAIL: 'Email',
             ENTER_EMAIL_NOTIFICATION: 'Пожалуйста, введите ваш e-mail. Вы получите письмо со ссылкой для создания нового пароля.',
             EMAIL_IS_SENT_NOTIFICATION: 'На ваш e-mail было отправлено письмо с ссылкой для создания нового пароля.',
-            INVALID_EMAIL: "Неверный e-mail"
-
+            INVALID_EMAIL: "Неверный e-mail",           
+            EMAIL_IS_REQUIRED: 'Необходимо ввести email'
         }
     }
 };

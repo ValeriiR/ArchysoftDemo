@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 
 import {
@@ -18,6 +18,8 @@ import {
   MatSidenavModule,
   MatTableModule,
   MatToolbarModule
+  
+  
 } from '@angular/material';
 import { HeaderComponent } from './components/header/header.component';
 
@@ -40,7 +42,8 @@ import { HeaderComponent } from './components/header/header.component';
     MatPaginatorModule,
     MatSidenavModule,
     MatTableModule,
-    MatToolbarModule
+    MatToolbarModule,
+    ReactiveFormsModule
   ],
   exports: [
     FormsModule,
@@ -60,7 +63,8 @@ import { HeaderComponent } from './components/header/header.component';
     MatPaginatorModule,
     MatSidenavModule,
     MatTableModule,
-    MatToolbarModule
+    MatToolbarModule,
+    ReactiveFormsModule
   ]
 })
 export class SharedModule { }

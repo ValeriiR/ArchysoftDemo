@@ -8,6 +8,7 @@ import { environment } from 'src/environments/environment';
 import { TokenModel } from '../models/token.model';
 import { LoginModel } from '../models/login.model';
 import { ApiResponse } from 'src/app/shared/models/api-response.model';
+import { ForgotPasswordModel } from '../models/forgot-password.model';
 
 @Injectable()
 export class AuthService implements AuthenticationService {
@@ -68,5 +69,13 @@ export class AuthService implements AuthenticationService {
       .setAccessToken(tokenModel.accessToken)
       .setRefreshToken(tokenModel.refreshToken);
     }
+  }
+
+  forgotPassword(forgotPasswordModel: ForgotPasswordModel): Observable<ApiResponse<any>> {
+    const headers = new HttpHeaders();
+    headers.set('Content-Type', 'application/json; charset=utf-8');
+
+    return this.http.post(`${environment.apiUrl}/auth/forgot-password`, forgotPasswordModel, { headers: headers })
+      .pipe(map((response: ApiResponse<any>) => response));
   }
 }
